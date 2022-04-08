@@ -11,8 +11,8 @@ export default class Pricing {
   }
 
   set amount(Amount) {
-    if (typeof (Amount) !== 'number') {
-      throw new TypeError('Amount should be a Number');
+    if (typeof Amount !== 'number') {
+      throw new TypeError('Amount must be a number');
     }
     this._amount = Amount;
   }
@@ -23,9 +23,9 @@ export default class Pricing {
 
   set currency(Cur) {
     if (typeof (Cur) !== Currency) {
-      throw new TypeError('Currency should be of type Currency');
+      throw new TypeError('currency should be of type Currency');
     }
-    this._currency = Currency;
+    this._currency = Cur;
   }
 
   displayFullPrice() {
