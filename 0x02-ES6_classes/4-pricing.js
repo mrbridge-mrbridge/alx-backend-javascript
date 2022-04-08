@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Currency from './3-currency.js';
 
 export default class Pricing {
@@ -5,7 +6,7 @@ export default class Pricing {
     this.amount = amount;
     this.currency = currency;
   }
-
+  
   get amount() {
     return this._amount;
   }
