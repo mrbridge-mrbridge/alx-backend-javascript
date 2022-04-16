@@ -1,4 +1,4 @@
-export default function getListStudentIds (myList) {
+export default function getListStudentIds(myList) {
   let finalList = [];
   if (!(myList instanceof Array)) {
     return finalList;
