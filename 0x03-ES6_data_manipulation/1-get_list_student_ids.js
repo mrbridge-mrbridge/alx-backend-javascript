@@ -1,8 +1,8 @@
 export default function getListStudentIds (myList) {
-  let FinalList = [];
+  let finalList = [];
   if (!(myList instanceof Array)) {
-    return FinalList;
+    return finalList;
   }
-  FinalList = myList.map((items) => items.id);
-  return FinalList;
+  finalList = myList.map((items) => items.id);
+  return finalList;
 }
