@@ -1,5 +1,5 @@
 export default function hasValuesFromArray(set, array) {
-  for (let item of array) {
+  for (const item of array) {
     if (!set.has(item)) {
       return false;
     }
