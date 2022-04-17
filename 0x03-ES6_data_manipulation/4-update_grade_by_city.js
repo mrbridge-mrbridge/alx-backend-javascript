@@ -4,6 +4,6 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
       id: student.id,
       firstName: student.firstName,
       location: student.location,
-      grade: (newGrades.filter((item) => item.studentId === student.id).shift() || {grade:'N/A'}).grade
+      grade: (newGrades.filter((item) => item.studentId === student.id).shift() || { grade: 'N/A' }).grade,
     }));
 }
