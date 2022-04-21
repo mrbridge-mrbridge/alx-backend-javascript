@@ -25,3 +25,6 @@
   * location(string) this attribute should always be defined
   * Add the possibility to add any attribute to the Object like contract(boolean) without specifying the name of the attribute.
 
+# Task..2
+
+* Write an interface named Directors that extends Teacher. It requires an attribute named numberOfReports(number)
