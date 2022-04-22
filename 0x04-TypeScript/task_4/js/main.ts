@@ -1,36 +1,25 @@
-interface Student {
-    firstName: string;
-    lastName: string;
-    location: string;
-}
+export const cpp: Subjects.Cpp = new Subjects.Cpp();
+export const java: Subjects.Java = new Subjects.Java();
+export const react: Subjects.React = new Subjects.React();
 
-const studentOne: Student = {
-    firstName: 'Taadi',
-    lastName: 'Efiekuma',
-    location: 'Takoradi',
+export const cTeacher: Subjects.Teacher = {
+    firstName: 'John',
+    lastName: 'Doe',
+    experienceTeachingC: 10,
 };
 
-const studentTwo: Student = {
-    firstName: 'Siano',
-    lastName: 'Ashtown',
-    location: 'Kumasi',
-};
+console.log('C++');
+cpp.setTeacher(cTeacher);
+console.log(cpp.getRequirements());
+console.log(cpp.getAvailableTeacher());
 
-let studentList: Student[] = [studentOne, studentTwo];
+console.log('Java');
+java.setTeacher(cTeacher);
+console.log(java.getRequirements());
+console.log(java.getAvailableTeacher());
 
-const student_table = document.createElement('table');
-const tablebody = document.createElement('tbody');
 
-studentList.forEach((objlis) => {
-    const tablename = document.createElement('tablename');
-    const tablerow = document.createElement('tablerow');
-    const tablelocation = document.createElement('tablelocation');
-
-    tablename.textContent = objlis.firstName;
-    tablelocation.textContent = objlis.location;
-    tablerow.appendChild(tablename);
-    tablerow.appendChild(tablelocation);
-    tablebody.appendChild(tablerow);
-})
-student_table.appendChild(tablebody);
-document.body.appendChild(student_table);
+console.log('React');
+react.setTeacher(cTeacher);
+console.log(react.getRequirements());
+console.log(react.getAvailableTeacher());
